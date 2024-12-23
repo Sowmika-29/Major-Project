@@ -1,0 +1,151 @@
+body, h2, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    background-image: url(bg.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    background-color: rgba(16, 20, 35, 0.797);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #c6c4d6;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form inputs and labels */
+label {
+    font-size: 1rem;
+    color: #dad4d4;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+
+input.form-control {
+    width: 25rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    padding-left: 2rem;
+    background-color:rgba(168, 159, 159, 0.338) ;
+    color: rgb(15, 15, 15);
+    border-radius: 0.5rem;
+}
+
+input.form-control:focus {
+    border-color: #848a90;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+small.text-danger {
+    font-size: 0.875rem;
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+
+button.btn {
+    text-align: center;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(206, 205, 228);
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(270deg,rgb(20, 31, 66),rgb(109, 109, 149));
+    cursor: pointer;
+    margin-left: 8rem;
+    transition: all 0.3s ease;
+}
+
+button.btn:hover {
+    box-shadow: rgb(206, 205, 228) 0px 0px 50px;
+    background: linear-gradient(270deg,rgb(109, 109, 149),rgb(20, 31, 66));
+
+}
+
+button.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem; 
+    }
+
+    button.btn {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    input.form-control {
+        width: 100%; 
+    }
+
+    form {
+        padding: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        max-width: 95%; 
+    }
+
+    input.form-control {
+        font-size: 1rem; 
+    }
+
+    button.btn {
+        font-size: 1.3rem; 
+    }
+
+    form {
+        padding: 15px;
+    }
+}
